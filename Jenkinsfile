@@ -8,7 +8,8 @@ pipeline{
             steps{
                 script{
                 sh ''' 
-                ssh root@${hostname} "scp installation.sh root@${hostname}:/root && sh installation.sh"
+                ssh root@${hostname} "scp installation.sh root@${hostname}:/root"
+                #ssh root@${hostname} "sh installation.sh"
                 '''
                 }
             }
