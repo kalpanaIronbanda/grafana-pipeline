@@ -9,7 +9,7 @@ pipeline{
                 script{
                 sh ''' 
                 scp installation.sh root@${hostname}:/root
-                #ssh root@${hostname} "sh installation.sh"
+                ssh root@${hostname} "sh installation.sh"
                 '''
                 }
             }
